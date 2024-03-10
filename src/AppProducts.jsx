@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Products from './components/Products';
 
 export default function AppProducts() {
-  const [showProducts, setShowProducts] = React.useState(true);
+  const [showProducts, setShowProducts] = useState(true);
   return (
     <div> 
       {showProducts && <Products />}
